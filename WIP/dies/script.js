@@ -10,7 +10,7 @@
         this.height = window.innerHeight;
         this.centerX = this.width/2;
         this.centerY = this.height/2;
-        this.cubeSize = 200;
+        this.cubeSize = 400;
         this.blockTime = 5000;
         this.TransactionsPerSecond = 2000;
         this.activeStep = 1;
@@ -145,7 +145,7 @@
             g.fillText('---------------', this.cubeSize * 0.1, this.cubeSize * 0.7);
             g.fillText('EVERYTIME   YOU', this.cubeSize * 0.1, this.cubeSize * 0.85);
             g.fillText('DONT      SMESH,', this.cubeSize * 0.1, this.cubeSize * 1.0);
-            g.fillText('A UNICORN  DIES', this.cubeSize * 0.1, this.cubeSize * 1.15);
+            g.fillText('A   BLOCK  DIES', this.cubeSize * 0.1, this.cubeSize * 1.15);
 
             var geometry = new THREE.PlaneGeometry(this.cubeSize * 0.9, this.cubeSize * 0.9);
             var texture = new THREE.CanvasTexture(bitmap);
