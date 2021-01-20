@@ -1,5 +1,5 @@
-const commands = String.raw`samurai@internal-cdprojektred.com/:~ cd HAX
-samurai@internal-cdprojektred.com/HAX/:~ ls`;
+const commands = String.raw`21e8@internal-mesh.com/:~ cd HAX
+21e8@internal-mesh.com/HAX/:~ ls`;
 
 const beep = String.raw`
 
@@ -79,18 +79,18 @@ const DrawCommands = async commands => {
 
 // Start the code
 (async()=> {
-	await DrawCommands("/:~ ssh samurai@internal-cdprojektred.com -p 2000");
+	await DrawCommands("/:~ ssh 21e8@internal-mesh.com -p 2021");
 	await Delay(1000);
-	RenderString("samurai@internal-cdprojektred.com password:");
+	RenderString("21e8@internal-mesh.com password:");
 	await Delay(5000);
 	RenderString("\n");
 	await DrawCommands(commands);
-	RenderString('\nbeep.js    samurai.js\n\n');
-	await DrawCommands('samurai@internal-cdprojektred.com/HAX:~ node beep.js');
+	RenderString('\nbeep.js    cyberpunk.js\n\n');
+	await DrawCommands('21e8@internal-mesh.com/HAX:~ node beep.js');
 	await DrawLines( beep );
 	await TypeString("\n\nSeems you're not among the smeshers after all. Wanna play a game? Watch for the beeps.");
 	await Delay(3000);
 	ResetTerminal();
-	await DrawCommands('samurai@internal-cdprojektred.com:~ KEY=3db7ca618243da1ba3bc76ab14bcf07b node samurai.js');
+	await DrawCommands('21e8@internal-mesh.com:~ KEY=3db7ca618243da1ba3bc76ab14bcf07b node cyberpunk.js');
 	await DrawLines(samurai);
 })();
