@@ -18,15 +18,16 @@ const beep = String.raw`
 
 const samurai = String.raw`
 
- (      *        (       )     (     
- )\ ) (  `       )\ ) ( /(     )\ )  
-(()/( )\))(  (  (()/( )\())(  (()/(  
- /(_)|(_)()\ )\  /(_)|(_)\ )\  /(_)) 
-(_)) (_()((_|(_)(_))  _((_|(_)(_))   
-/ __||  \/  | __/ __|| || | __| _ \  
-\__ \| |\/| | _|\__ \| __ | _||   /  
-|___/|_|  |_|___|___/|_||_|___|_|_\  
-
+  ██████  ███▄ ▄███▓▓█████   ██████  ██░ ██ ▓█████  ██▀███  
+▒██    ▒ ▓██▒▀█▀ ██▒▓█   ▀ ▒██    ▒ ▓██░ ██▒▓█   ▀ ▓██ ▒ ██▒
+░ ▓██▄   ▓██    ▓██░▒███   ░ ▓██▄   ▒██▀▀██░▒███   ▓██ ░▄█ ▒
+  ▒   ██▒▒██    ▒██ ▒▓█  ▄   ▒   ██▒░▓█ ░██ ▒▓█  ▄ ▒██▀▀█▄  
+▒██████▒▒▒██▒   ░██▒░▒████▒▒██████▒▒░▓█▒░██▓░▒████▒░██▓ ▒██▒
+▒ ▒▓▒ ▒ ░░ ▒░   ░  ░░░ ▒░ ░▒ ▒▓▒ ▒ ░ ▒ ░░▒░▒░░ ▒░ ░░ ▒▓ ░▒▓░
+░ ░▒  ░ ░░  ░      ░ ░ ░  ░░ ░▒  ░ ░ ▒ ░▒░ ░ ░ ░  ░  ░▒ ░ ▒░
+░  ░  ░  ░      ░      ░   ░  ░  ░   ░  ░░ ░   ░     ░░   ░ 
+      ░         ░      ░  ░      ░   ░  ░  ░   ░  ░   ░     
+                                                            
                                      `;
 
 let blink = document.querySelector('.blink');
@@ -87,7 +88,7 @@ const DrawCommands = async commands => {
 	RenderString('\nbeep.js    samurai.js\n\n');
 	await DrawCommands('samurai@internal-cdprojektred.com/HAX:~ node beep.js');
 	await DrawLines( beep );
-	await TypeString("\n\nSeems you're not among the sheep after all. Wanna play a game? Watch for the beeps.");
+	await TypeString("\n\nSeems you're not among the smeshers after all. Wanna play a game? Watch for the beeps.");
 	await Delay(3000);
 	ResetTerminal();
 	await DrawCommands('samurai@internal-cdprojektred.com:~ KEY=3db7ca618243da1ba3bc76ab14bcf07b node samurai.js');
